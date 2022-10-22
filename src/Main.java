@@ -2,14 +2,14 @@ public class Main {
     public static void main(String[] args) {
 
         int balance = 3746; // начальный баланс на счету
-        int pay = 1847; // платеж
+        int pay = 1000; // платеж
         int bonus = pay / 100; // бонус за пополнение счета
-        int finalBalance; // итоговый баланс на счету
+        int finalBalance = balance + pay + bonus; // итоговый баланс на счету
 
         if (pay >= 1000) {
-            finalBalance = balance + pay + bonus;
+            bonus = bonus;
         } else {
-            finalBalance = balance + pay;
+            bonus = 0;
         }
 
 
